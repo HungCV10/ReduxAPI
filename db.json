@@ -1,0 +1,23 @@
+{
+  "sanpham": [
+    {
+      "id": "1",
+      "name": "Cam",
+      "image": "abc",
+      "price": 100
+    },
+    {
+      "id": "2",
+      "name": "Lê",
+      "image": "abc",
+      "price": 200
+    },
+    {
+      "id": "3",
+      "name": "Táo",
+      "image": "abc",
+      "price": 300
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
