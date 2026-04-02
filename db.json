@@ -3,19 +3,19 @@
     {
       "id": "1",
       "name": "Cam",
-      "image": "abc",
+      "image": "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/11/tai-hinh-nen-dep-mien-phi.jpg",
       "price": 100
     },
     {
       "id": "2",
       "name": "Lê",
-      "image": "abc",
+      "image": "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/11/tai-hinh-nen-dep-mien-phi.jpg",
       "price": 200
     },
     {
       "id": "3",
       "name": "Táo",
-      "image": "abc",
+      "image": "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/11/tai-hinh-nen-dep-mien-phi.jpg",
       "price": 300
     }
   ],

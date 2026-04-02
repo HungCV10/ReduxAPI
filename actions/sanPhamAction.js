@@ -1,5 +1,5 @@
 import axios from "axios"
-import { setSanPham, addSanPham, deleteSanPham } from "../reducers/sanPhamReducer"
+import { setSanPham } from "../reducers/sanPhamReducer"
 
 const apiUrl = "http://10.82.2.57:3000/sanpham"
 export const getListSP = ()=> async(dispatch)=>{

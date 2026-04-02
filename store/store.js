@@ -1,8 +1,8 @@
-import configureStore from "@reduxjs/toolkit"
+import {configureStore} from "@reduxjs/toolkit"
 import sanPhamReducer from "../reducers/sanPhamReducer"
 const store = configureStore({
     reducer: {
-        sanpham: sanPhamReducer
+        sanPham: sanPhamReducer
     }
 })
 export default store

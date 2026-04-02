@@ -1,9 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
+import { Provider } from 'react-redux';
+import store from './store/store'
+import SanPhamScreen from './screens/SanPhamScreen';
+import { NavigationContainer } from '@react-navigation/native';
 export default function App() {
   return (
-    <View></View>
+    <Provider store={store}>
+      <NavigationContainer>
+        <SanPhamScreen></SanPhamScreen>
+      </NavigationContainer>
+    </Provider>
   );
 }
 
