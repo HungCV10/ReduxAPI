@@ -1,6 +1,12 @@
+import { useNavigation } from '@react-navigation/native'
 import React from 'react'
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 const SanPhamItem = ({ sanPham }) => {
+    const navigation = useNavigation()
+
+    const btnSua = ()=>{
+        navigation.navigate("editSanPham", sanPham)
+    }
     return (
         <View>
             <Image style={{ height: 100, width: 100 }}
@@ -8,6 +14,9 @@ const SanPhamItem = ({ sanPham }) => {
             ></Image>
             <Text>Tên: {sanPham.name}</Text>
             <Text>Giá: {sanPham.price}</Text>
+            <TouchableOpacity onPress={btnSua}>
+                <Text>Sửa</Text>
+            </TouchableOpacity>
         </View>
     )
 }

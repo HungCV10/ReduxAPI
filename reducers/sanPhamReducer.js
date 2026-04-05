@@ -11,11 +11,26 @@ const sanPhamSlice = createSlice({
         setSanPham(state, action){
             state.listSanPham  = action.payload
             // action.payload: thông tin muốn truyền vào reducer
+        }, 
+        addSanPham(state, action){
+            state.listSanPham.push(action.payload)
+        }, 
+        editSanPham(state, action){
+            const {id, sanPham} = action.payload
+            // lấy id, sanrpham từ trong action payload
+            state.listSanPham.forEach((sp, index)=>{
+                // duyệt từng sản phẩm, nếu tìm thấy sản phẩm có id giống => cập nhật lại sản phẩm đó
+                if(sp.id = id){
+                    state.listSanPham[index] = {...sp, ...sanPham}
+                    //...sp: giữa sản phẩm cũ
+                    //...sanPham: ghi đè dữ liệu mới
+                }
+            })
         }
     },
 
 })
 
-export const {setSanPham} = sanPhamSlice.actions
+export const {setSanPham, addSanPham, editSanPham} = sanPhamSlice.actions
 
 export default sanPhamSlice.reducer

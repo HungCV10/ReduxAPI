@@ -1,7 +1,8 @@
 import axios from "axios"
-import { setSanPham } from "../reducers/sanPhamReducer"
+import { addSanPham, editSanPham, setSanPham } from "../reducers/sanPhamReducer"
 
-const apiUrl = "http://10.82.2.57:3000/sanpham"
+const apiUrl = "http://10.82.1.70:3000/sanpham"
+
 export const getListSP = ()=> async(dispatch)=>{
     try {
         const response = await axios.get(apiUrl)
@@ -12,3 +13,22 @@ export const getListSP = ()=> async(dispatch)=>{
     }
 }
 
+export const addSanPhamAction = (sanPham)=> async(dispatch)=>{
+    try {
+        const response = await axios.post(apiUrl, sanPham)
+        console.log(response.data)
+        dispatch(addSanPham(response.data))
+    } catch (error) {
+        console.log("Hiển thị", error)
+    }
+}
+
+export const editSanPhamAction = (id, sanPham)=> async(dispatch)=>{
+    try {
+        const response = await axios.put(`${apiUrl}/${id}`, sanPham)
+        console.log(response.data)
+        dispatch(editSanPham(response.data))
+    } catch (error) {
+        console.log("Hiển thị", error)
+    }
+}
