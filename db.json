@@ -5,30 +5,6 @@
       "name": "Cam",
       "image": "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/11/tai-hinh-nen-dep-mien-phi.jpg",
       "price": 100
-    },
-    {
-      "id": "2",
-      "name": "Lê",
-      "image": "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/11/tai-hinh-nen-dep-mien-phi.jpg",
-      "price": 200
-    },
-    {
-      "id": "3",
-      "name": "Táo",
-      "image": "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/11/tai-hinh-nen-dep-mien-phi.jpg",
-      "price": 300
-    },
-    {
-      "name": "444",
-      "price": "44",
-      "image": "444",
-      "id": "K8srUABXuG8"
-    },
-    {
-      "name": "táo",
-      "price": "123",
-      "image": "2323",
-      "id": "3Nw0fIes2e4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

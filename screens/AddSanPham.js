@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native'
 const AddSanPham = () => {
   
   const [name, setName] = useState("")
-  const [price, setPrice] = useState(0)
+  const [price, setPrice] = useState("")
   const [image, setImage] = useState("")
   const navigation = useNavigation()
   const dispatch = useDispatch()
